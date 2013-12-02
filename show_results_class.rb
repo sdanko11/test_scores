@@ -29,31 +29,45 @@ class ShowResults
     puts "50: #{@f_count.count}"
   end
 
-  def print_student_names
+def print_student_names
+  if @a_count.count >= 1
     puts ''
     puts "A Students"
     puts "==================="
     @a_count.each do |person|
       puts person
     end
+  end
+  if @b_count.count >= 1
     puts ''
     puts "B Students"
     puts "==================="
     @b_count.each do |person|
       puts person
     end
+  end
+  if @c_count.count >= 1
     puts ''
     puts "C Students"
     puts "==================="
     @c_count.each do |person|
       puts person
     end
+  end
+  if @d_count.count >= 1
     puts ''
     puts "D Students"
     puts "==================="
     @d_count.each do |person|
       puts person
     end
+  end
+  if @f_count.count >= 1
     puts ''
+    puts 'F Students'
+    @f_count.each do |person|
+      puts person
+    end
+  end
   end
 end
