@@ -65,6 +65,7 @@ def print_student_names
   if @f_count.count >= 1
     puts ''
     puts 'F Students'
+    puts "==================="
     @f_count.each do |person|
       puts person
     end
