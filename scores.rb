@@ -1,4 +1,5 @@
 require 'csv'
+
 require_relative 'load_grade_class'
 require_relative 'calculate_class_stats_class'
 require_relative 'show_results_class'
@@ -10,8 +11,3 @@ class_stats.calculate_class_stats
 grades_report = ShowResults.new(class_stats)
 grades_report.print_each_grade_count
 grades_report.print_student_names
-
-
-
-
-
